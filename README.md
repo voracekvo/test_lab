@@ -48,15 +48,33 @@ APP_ENV=dev
 5. Run the following command to build and start the containers for the development environment:
 
 
-```bash
+```css
 docker-compose build --build-arg APP_ENV=dev
 docker-compose up
 ```
 
-6. Create a .env file in the project directory:
+6. To build and start the containers for the production environment:
 
-```bash
-touch .env
+
+```css
+docker-compose build --build-arg APP_ENV=prod
+docker-compose up
 ```
+7. Once the containers are running, you can access the PHP application by opening a web browser and navigating to **'http://localhost'**. The PHP application should display the dummy data retrieved from MySQL and MongoDB.
 
+
+## Configuration
+All configurations are injected and not hard-coded, making it easy to modify the system for your specific needs.
+
+To modify the database settings, you can update the values of the following environment variables in the **'.env'** file:
+
+* **'DB_HOST'**: The hostname of the MySQL container.
+* **'DB_PORT'**: The port number that MySQL is running on.
+* **'DB_NAME'**: The name of the MySQL database.
+* **'DB_USER'**: The username to use when connecting to the MySQL database.
+* **'DB_PASS'**: The password to use when connecting to the MySQL database.
+* **'MONGO_HOST'**: The hostname of the MongoDB container.
+* **'MONGO_PORT'**: The port number that MongoDB is running on.
+
+To build a dev or prod version of the web frontend container with PHP Xdebug turned on or off, you can use the **'--build-arg APP_ENV=dev'** or **'--build-arg APP_ENV=prod'** command when running the **'docker-compose build'** command
 
