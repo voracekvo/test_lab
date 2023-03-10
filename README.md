@@ -31,7 +31,7 @@ touch .env
 4. Add the following environment variables to the .env file:
 
 
-```bash
+```makefile
 DB_HOST=db
 DB_PORT=3306
 DB_NAME=myapp
@@ -42,10 +42,15 @@ MONGO_PORT=27017
 APP_ENV=dev
 ```
 
-5. Create a .env file in the project directory:
+## Note: You can change the values of these environment variables if you want to use a different database name or credentials.
+
+
+5. Run the following command to build and start the containers for the development environment:
+
 
 ```bash
-touch .env
+docker-compose build --build-arg APP_ENV=dev
+docker-compose up
 ```
 
 6. Create a .env file in the project directory:
