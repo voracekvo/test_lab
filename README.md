@@ -19,7 +19,7 @@ git clone https://github.com/voracekvo/test_lab.git
 2. Navigate to the project directory:
 
 ```bash
-cd your-repo-name
+cd test_lab
 ```
 
 3. Create a .env file in the project directory:
