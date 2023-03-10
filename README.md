@@ -13,7 +13,7 @@ To use this system, you will need:
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/voracekvo/test_lab.git
 ```
 
 2. Navigate to the project directory:
@@ -78,3 +78,6 @@ To modify the database settings, you can update the values of the following envi
 
 To build a dev or prod version of the web frontend container with PHP Xdebug turned on or off, you can use the **'--build-arg APP_ENV=dev'** or **'--build-arg APP_ENV=prod'** command when running the **'docker-compose build'** command
 
+## Conclusion
+
+This containerized system with a web frontend, MySQL, and MongoDB containers is a simple and easy-to-use solution for testing and development purposes. The PHP application connects to both databases, reads dummy data, and displays it. The system can be deployed and run on a Mac or Windows computer regardless of the
