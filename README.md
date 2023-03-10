@@ -15,3 +15,43 @@ To use this system, you will need:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 ```
+
+2. Navigate to the project directory:
+
+```bash
+cd your-repo-name
+```
+
+3. Create a .env file in the project directory:
+
+```bash
+touch .env
+```
+
+4. Add the following environment variables to the .env file:
+
+
+```bash
+DB_HOST=db
+DB_PORT=3306
+DB_NAME=myapp
+DB_USER=myuser
+DB_PASS=mypass
+MONGO_HOST=mongo
+MONGO_PORT=27017
+APP_ENV=dev
+```
+
+5. Create a .env file in the project directory:
+
+```bash
+touch .env
+```
+
+6. Create a .env file in the project directory:
+
+```bash
+touch .env
+```
+
+
